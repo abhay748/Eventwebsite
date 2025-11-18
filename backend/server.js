@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://event-ease-ochre.vercel.app"],
+    origin: ["http://localhost:5173", "https://eventwebsite-five.vercel.app"],
     methods: ["GET", "POST"],
   },
 });
@@ -23,7 +23,7 @@ socketManager.init(io);
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://event-ease-ochre.vercel.app"],
+    origin: ["http://localhost:5173", "https://eventwebsite-five.vercel.app"],
     credentials: true,
   })
 );
